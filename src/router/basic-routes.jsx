@@ -6,8 +6,11 @@ import Header from '../css-style/index.jsx';
 import MyForm from '../forms/index.jsx';
 import { App as ForwardingDemo } from '../forward-ref/index.jsx';
 import { App as HocDemo } from '../hoc/index.jsx';
+import { FavoriteColor as UseStateDemo } from '../hooks/useState/index.jsx';
+import { MyCar as MultipleStateDemo } from '../hooks/useState/multiple-state.jsx';
 import { App as BubblingDemo } from '../portals/bubbling.jsx';
 import { MyApp as PortalsDemo } from '../portals/index.jsx';
+import { App as SassDemo } from '../sass/index.jsx';
 import { App as SuspenseDemo } from '../suspense/index.jsx';
 import { App as TransitionsDemo } from '../transitions/index.jsx';
 import Info from './url-parameters.jsx';
@@ -29,6 +32,9 @@ function Home() {
           <li><Link to="/info/jane">Jane's Info</Link></li>
           <li><Link to="/forward-ref">Forward Ref</Link></li>
           <li><Link to="/hoc">HOC Demo</Link></li>
+          <li><Link to="/sass">Sass Demo</Link></li>
+          <li><Link to="/use-state">Use State Demo</Link></li>
+          <li><Link to="/multiple-state">Multiple State Demo</Link></li>
         </ul>
       </nav>
     </div>
@@ -51,6 +57,9 @@ export function App() {
       <Route path="/info/:firstname" element={<Info />} />
       <Route path="/forward-ref" element={<ForwardingDemo />} />
       <Route path="/hoc" element={<HocDemo />} />
+      <Route path="/sass" element={<SassDemo />} />
+      <Route path="/use-state" element={<UseStateDemo />} />
+      <Route path="/multiple-state" element={<MultipleStateDemo />} />
     </Routes>
   )
 }
