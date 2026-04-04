@@ -4,6 +4,10 @@ import './App.css'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
+import { App as GlobalStyleDemo } from './css-in-js/global-style.jsx'
+import { App as CssInJsDemo } from './css-in-js/index.jsx'
+import { App as CarDemo } from './css-modules/index.jsx'
+import Header from './css-style/index.jsx'
 import MyForm from './forms/index.jsx'
 import { App as BubblingDemo } from './portals/bubbling.jsx'
 import { MyApp as PortalsDemo } from './portals/index.jsx'
@@ -131,6 +135,10 @@ function App() {
       <Route path="/portals" element={<PortalsDemo />} />
       <Route path="/bubbling" element={<BubblingDemo />} />
       <Route path="/suspense" element={<SuspenseDemo />} />
+      <Route path="/css-header" element={<Header />} />
+      <Route path="/css-modules" element={<CarDemo />} />
+      <Route path="/css-in-js" element={<CssInJsDemo />} />
+      <Route path="/css-global" element={<GlobalStyleDemo />} />
     </Routes>
   )
 }
