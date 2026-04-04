@@ -7,6 +7,7 @@ import MyForm from '../forms/index.jsx';
 import { App as BubblingDemo } from '../portals/bubbling.jsx';
 import { MyApp as PortalsDemo } from '../portals/index.jsx';
 import { App as SuspenseDemo } from '../suspense/index.jsx';
+import { App as TransitionsDemo } from '../transitions/index.jsx';
 import Info from './url-parameters.jsx';
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
           <li><Link to="/css-modules">CSS Modules</Link></li>
           <li><Link to="/css-in-js">CSS-in-JS</Link></li>
           <li><Link to="/css-global">Global Styles</Link></li>
+          <li><Link to="/transitions">Transitions</Link></li>
           <li><Link to="/info/john">John's Info</Link></li>
           <li><Link to="/info/jane">Jane's Info</Link></li>
         </ul>
@@ -41,6 +43,7 @@ export function App() {
       <Route path="/css-modules" element={<CarDemo />} />
       <Route path="/css-in-js" element={<CssInJsDemo />} />
       <Route path="/css-global" element={<GlobalStyleDemo />} />
+      <Route path="/transitions" element={<TransitionsDemo />} />
       <Route path="/info/:firstname" element={<Info />} />
     </Routes>
   )
