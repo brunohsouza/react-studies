@@ -7,6 +7,7 @@ import viteLogo from './assets/vite.svg'
 import MyForm from './forms/index.jsx'
 import { App as BubblingDemo } from './portals/bubbling.jsx'
 import { MyApp as PortalsDemo } from './portals/index.jsx'
+import { App as SuspenseDemo } from './suspense/index.jsx'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -129,6 +130,7 @@ function App() {
       <Route path="/forms" element={<MyForm />} />
       <Route path="/portals" element={<PortalsDemo />} />
       <Route path="/bubbling" element={<BubblingDemo />} />
+      <Route path="/suspense" element={<SuspenseDemo />} />
     </Routes>
   )
 }
