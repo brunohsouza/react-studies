@@ -5,6 +5,7 @@ import { App as CarDemo } from '../css-modules/index.jsx';
 import Header from '../css-style/index.jsx';
 import MyForm from '../forms/index.jsx';
 import { App as ForwardingDemo } from '../forward-ref/index.jsx';
+import { App as HocDemo } from '../hoc/index.jsx';
 import { App as BubblingDemo } from '../portals/bubbling.jsx';
 import { MyApp as PortalsDemo } from '../portals/index.jsx';
 import { App as SuspenseDemo } from '../suspense/index.jsx';
@@ -27,6 +28,7 @@ function Home() {
           <li><Link to="/info/john">John's Info</Link></li>
           <li><Link to="/info/jane">Jane's Info</Link></li>
           <li><Link to="/forward-ref">Forward Ref</Link></li>
+          <li><Link to="/hoc">HOC Demo</Link></li>
         </ul>
       </nav>
     </div>
@@ -48,6 +50,7 @@ export function App() {
       <Route path="/transitions" element={<TransitionsDemo />} />
       <Route path="/info/:firstname" element={<Info />} />
       <Route path="/forward-ref" element={<ForwardingDemo />} />
+      <Route path="/hoc" element={<HocDemo />} />
     </Routes>
   )
 }
