@@ -5,6 +5,8 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import MyForm from './forms/index.jsx'
+import { App as BubblingDemo } from './portals/bubbling.jsx'
+import { MyApp as PortalsDemo } from './portals/index.jsx'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -125,6 +127,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/forms" element={<MyForm />} />
+      <Route path="/portals" element={<PortalsDemo />} />
+      <Route path="/bubbling" element={<BubblingDemo />} />
     </Routes>
   )
 }
