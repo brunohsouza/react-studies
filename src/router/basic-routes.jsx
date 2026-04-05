@@ -6,6 +6,7 @@ import Header from '../css-style/index.jsx';
 import MyForm from '../forms/index.jsx';
 import { App as ForwardingDemo } from '../forward-ref/index.jsx';
 import { App as HocDemo } from '../hoc/index.jsx';
+import { Timer as UseEffectDemo } from '../hooks/useEffect/index.jsx';
 import { FavoriteColor as UseStateDemo } from '../hooks/useState/index.jsx';
 import { MyCar as MultipleStateDemo } from '../hooks/useState/multiple-state.jsx';
 import { App as BubblingDemo } from '../portals/bubbling.jsx';
@@ -35,6 +36,7 @@ function Home() {
           <li><Link to="/sass">Sass Demo</Link></li>
           <li><Link to="/use-state">Use State Demo</Link></li>
           <li><Link to="/multiple-state">Multiple State Demo</Link></li>
+          <li><Link to="/use-effect">Use Effect Demo</Link></li>
         </ul>
       </nav>
     </div>
@@ -60,6 +62,7 @@ export function App() {
       <Route path="/sass" element={<SassDemo />} />
       <Route path="/use-state" element={<UseStateDemo />} />
       <Route path="/multiple-state" element={<MultipleStateDemo />} />
+      <Route path="/use-effect" element={<UseEffectDemo />} />
     </Routes>
   )
 }
