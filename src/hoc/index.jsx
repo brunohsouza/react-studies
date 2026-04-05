@@ -1,9 +1,10 @@
 // This is our HOC - it adds a border to any component
-function withBorder(WrappedComponent) {
+// eslint-disable-next-line no-unused-vars
+function withBorder(Component) {
   return function NewComponent(props) {
     return (
       <div style={{ border: '2px solid blue', padding: '10px' }}>
-        <WrappedComponent {...props} />
+        <Component {...props} />
       </div>
     );
   };
