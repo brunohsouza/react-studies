@@ -6,6 +6,8 @@ import Header from '../css-style/index.jsx';
 import MyForm from '../forms/index.jsx';
 import { App as ForwardingDemo } from '../forward-ref/index.jsx';
 import { App as HocDemo } from '../hoc/index.jsx';
+import { Home as CustomHookDemo } from '../hooks/custom-hooks/fetch-data-no-custom-hook.jsx';
+import { Home as UseFetchDemo } from '../hooks/custom-hooks/main.jsx';
 import WithCallbackExample from '../hooks/useCallback/index.jsx';
 import { App as UseContextDemo } from '../hooks/useContext/index.jsx';
 import { Timer as UseEffectDemo } from '../hooks/useEffect/index.jsx';
@@ -49,6 +51,8 @@ function Home() {
           <li><Link to="/use-reducer">Use Reducer Demo</Link></li>
           <li><Link to="/use-callback">Use Callback Demo</Link></li>
           <li><Link to="/use-memo">Use Memo Demo</Link></li>
+          <li><Link to="/custom-hooks">Custom Hooks Demo</Link></li>
+          <li><Link to="/use-fetch">Use Fetch Demo</Link></li>
         </ul>
       </nav>
     </div>
@@ -81,6 +85,8 @@ export function App() {
       <Route path="/use-reducer" element={<UseReducerDemo />} />
       <Route path="/use-callback" element={<WithCallbackExample />} />
       <Route path="/use-memo" element={<UseMemoDemo />} />
+      <Route path="/custom-hooks" element={<CustomHookDemo />} />
+      <Route path="/use-fetch" element={<UseFetchDemo />} />
     </Routes>
   )
 }
