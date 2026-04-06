@@ -18,6 +18,7 @@
  * useReducer is preferred over useState here because the state is an array of objects
  * and the update logic is complex enough to benefit from being centralized in the reducer.
  */
+
 import { useReducer } from 'react';
 
 const initialScore = [{
