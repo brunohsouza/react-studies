@@ -8,6 +8,9 @@ import { App as ForwardingDemo } from '../forward-ref/index.jsx';
 import { App as HocDemo } from '../hoc/index.jsx';
 import { App as UseContextDemo } from '../hooks/useContext/index.jsx';
 import { Timer as UseEffectDemo } from '../hooks/useEffect/index.jsx';
+import { Score as UseReducerDemo } from '../hooks/useReducer/index.jsx';
+import { App as UseRefDomElement } from '../hooks/useRef/dom-elements.jsx';
+import { App as UseRefDemo } from '../hooks/useRef/index.jsx';
 import { FavoriteColor as UseStateDemo } from '../hooks/useState/index.jsx';
 import { MyCar as MultipleStateDemo } from '../hooks/useState/multiple-state.jsx';
 import { App as BubblingDemo } from '../portals/bubbling.jsx';
@@ -39,6 +42,9 @@ function Home() {
           <li><Link to="/multiple-state">Multiple State Demo</Link></li>
           <li><Link to="/use-effect">Use Effect Demo</Link></li>
           <li><Link to="/use-context">Use Context Demo</Link></li>
+          <li><Link to="/use-ref">Use Ref Demo</Link></li>
+          <li><Link to="/use-ref-dom-element">Use Ref DOM Element Demo</Link></li>
+          <li><Link to="/use-reducer">Use Reducer Demo</Link></li>
         </ul>
       </nav>
     </div>
@@ -66,6 +72,9 @@ export function App() {
       <Route path="/multiple-state" element={<MultipleStateDemo />} />
       <Route path="/use-effect" element={<UseEffectDemo />} />
       <Route path="/use-context" element={<UseContextDemo />} />
+      <Route path="/use-ref" element={<UseRefDemo />} />
+      <Route path="/use-ref-dom-element" element={<UseRefDomElement />} />
+      <Route path="/use-reducer" element={<UseReducerDemo />} />
     </Routes>
   )
 }
