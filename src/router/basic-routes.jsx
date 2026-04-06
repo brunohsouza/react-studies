@@ -6,6 +6,7 @@ import Header from '../css-style/index.jsx';
 import MyForm from '../forms/index.jsx';
 import { App as ForwardingDemo } from '../forward-ref/index.jsx';
 import { App as HocDemo } from '../hoc/index.jsx';
+import WithCallbackExample from '../hooks/useCallback/index.jsx';
 import { App as UseContextDemo } from '../hooks/useContext/index.jsx';
 import { Timer as UseEffectDemo } from '../hooks/useEffect/index.jsx';
 import { Score as UseReducerDemo } from '../hooks/useReducer/index.jsx';
@@ -45,6 +46,7 @@ function Home() {
           <li><Link to="/use-ref">Use Ref Demo</Link></li>
           <li><Link to="/use-ref-dom-element">Use Ref DOM Element Demo</Link></li>
           <li><Link to="/use-reducer">Use Reducer Demo</Link></li>
+          <li><Link to="/use-callback">Use Callback Demo</Link></li>
         </ul>
       </nav>
     </div>
@@ -75,6 +77,7 @@ export function App() {
       <Route path="/use-ref" element={<UseRefDemo />} />
       <Route path="/use-ref-dom-element" element={<UseRefDomElement />} />
       <Route path="/use-reducer" element={<UseReducerDemo />} />
+      <Route path="/use-callback" element={<WithCallbackExample />} />
     </Routes>
   )
 }
